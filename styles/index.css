@@ -1,0 +1,64 @@
+/* <!-- all the btn style here --> */
+.btn-1{
+   height: 50px; 
+   width: 197px;
+   background-color: orange;
+   border-radius: 12px;
+   color: white;
+   border: none;
+}
+
+
+/* <!-- shared styles --> */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.navbar ,.nav-logo ,.nav-link,.btn{
+    display: flex;
+}
+/* <!-- Navbar related styles --> */
+.navbar{
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-logo{
+    align-items: center;
+    gap: 10px;
+}
+.logo{
+    height: 62px;
+    width: 62px;
+}
+.brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navs{
+    text-decoration: none;
+    font: size 1.25rem; 
+    font-weight: bold;
+}
+.nav-link{
+        gap: 40px;
+}
+.nav-items{
+    list-style: none;
+}
+.link1{
+    color: orange;
+}
+.link2{
+    color: skyblue;
+}
+.link3{
+color:#05D4DF;
+}   
+.link4{
+    color: #5D58EF;
+}
+
+/* Mobile style responsive */
+@media screen {
+    
+}
+

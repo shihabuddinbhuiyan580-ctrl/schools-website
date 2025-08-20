@@ -7,7 +7,15 @@
     color: white;
     border: none;
 }
+.btn-2{
+     height: 50px; 
+    width: 197px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    color: white;
+    border: none;
 
+}
 /* <!-- shared styles --> */
 body {
   font-family: "Quicksand", sans-serif;
@@ -19,7 +27,7 @@ body {
 /* <!-- Navbar related styles --> */
 .navbar{
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav-logo{
     align-items: center;
@@ -68,6 +76,32 @@ color:#05D4DF;
   color: black;
   cursor: pointer;
 }
+/* Bannner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.write{
+    
+}
+.orange{
+    color: orange;
+}
+.blue{
+    color: skyblue;
+}
+.banner-title{
+    font-size: 3.2rem;
+
+}
+.banner-des{
+    font-size: 1.25rem;
+}
+
+
+
+
 
 /* Mobile style responsive */
 @media screen and (max-width:576px){
@@ -85,7 +119,7 @@ color:#05D4DF;
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 290px;
+        right: 330px;
         background: white;
         padding: 1rem;
         display: none;
@@ -101,7 +135,7 @@ color:#05D4DF;
         position: relative;
         padding: 10px 20px;
         width: 100%;
-        gap: 350px;
+        gap: 330px;
     }
     
     /* Show hamburger on mobile */

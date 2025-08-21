@@ -6,6 +6,7 @@
     border-radius: 12px;
     color: white;
     border: none;
+    font-size: 19px;
 }
 .btn-2{
      height: 50px; 
@@ -14,6 +15,7 @@
     border-radius: 12px;
     color: white;
     border: none;
+    font-size: 19px;
 
 }
 /* <!-- shared styles --> */
@@ -23,128 +25,10 @@ body {
 .navbar ,.nav-logo ,.nav-link,.btn{
     display: flex;
 }
-
-/* <!-- Navbar related styles --> */
-.navbar{
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-logo{
-    align-items: center;
-    gap: 10px;
-}
-.logo{
-    height: 62px;
-    width: 62px;
-}
-.brand{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.navs{
-    text-decoration: none;
-    font: size 1.25rem; 
-    font-weight: bold;
-}
-.nav-link{
-        gap: 40px;
-}
-.nav-items{
-    list-style: none;
-}
-.link1{
-    color: orange;
-}
-.link2{
-    color: skyblue;
-}
-.link3{
-color:#05D4DF;
-}   
-.link4{
-    color: #5D58EF;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#menu-toggle {
-  display: none;
-} 
-
-/* Hamburger (hidden on desktop) */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  color: black;
-  cursor: pointer;
-}
-/* Bannner styles */
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-.write{
-    
-}
-.orange{
-    color: orange;
-}
-.blue{
-    color: skyblue;
-}
-.banner-title{
-    font-size: 3.2rem;
-
-}
-.banner-des{
-    font-size: 1.25rem;
-}
-
-
-
-
-
-/* Mobile style responsive */
-@media screen and (max-width:576px){
-    .brand ,.btn-1{display: none;}
-    .logo{
-        height: 46px;
-        width: 46px;
-    }
-    .nav-link:hover{
-    color: bisque;}
-    .nav-links{
-        position: relative;
-    }
-    .nav-link{
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 330px;
-        background: white;
-        padding: 1rem;
-        display: none;
-        width: 150px;
-        z-index: 999;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        align-items: flex-start;
-    }
-    .navbar {
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        padding: 10px 20px;
-        width: 100%;
-        gap: 330px;
-    }
-    
-    /* Show hamburger on mobile */
-    .hamburger {
-        display: block;
-    }
-    
-    /* Show menu when checkbox is checked */
-    #menu-toggle:checked + .hamburger + .nav-links .nav-link {
-        display: flex;
-    }
-}
+/* Navbar related style */

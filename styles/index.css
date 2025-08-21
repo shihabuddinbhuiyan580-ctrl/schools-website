@@ -37,7 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 70px;
     background-color: white;
 }
 .navbar-logo{
@@ -138,6 +138,67 @@ body {
     margin-bottom: 30px;
 
 }
+/* main style */
+    main{
+        background-image: url(bg.png);
+    }
+
+    .cur-title{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.Curriculum{
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 90px;
+    max-width: 100%;
+    width: 100%;
+    
+}
+.feature{
+    border:1px solid #d1d1d1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+    align-items: center;
+    height: 29.8125rem;
+    width: 23rem;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.feature-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.feature-des{
+    color: #808080;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.read-1{
+color: #64C8FF;
+}
+.read-2{
+    color: #F0AA00;
+}
+.read-3{
+    color: #8700FF;
+}
+.bg3{
+  background: linear-gradient(to bottom, #F2E8FF 0%, #F2E8FF , white 30%, white 100%);
+}
+.bg2{
+ background: linear-gradient(to bottom, #FFF4DC 0%, #FFF4DC , white 30%, white 100%);}
+.bg1{
+  background: linear-gradient(to bottom, #DEF5FF 0%, #DEF5FF , white 30%, white 100%);}
+}
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -214,6 +275,11 @@ body {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 }
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
     .navbar {

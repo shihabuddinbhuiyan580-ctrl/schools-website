@@ -16,8 +16,104 @@
     color: white;
     border: none;
     font-size: 19px;
-
 }
+
+.btn-primary {
+  background-color: #3CD8E8;
+  color: white;
+  border-radius: 2rem;
+  height: 2.6rem;
+  width: 9rem;
+  border: none;
+  position: absolute;
+  bottom: -1.3rem; /* Half of the button height (2.6rem/2 = 1.3rem) */
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+  background-color: #2ac5d5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Active state for the button */
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state for accessibility */
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(60, 216, 232, 0.4);
+}
+.btn-primarys {
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  height: 39px;
+  width: 174px;
+  background-color: #95B226;
+  position: absolute;
+  bottom: -19.5px; /* Half of the button height (39px/2 = 19.5px) */
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* Hover effect for the button */
+.btn-primarys:hover {
+  background-color: #839e20;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Active state for the button */
+.btn-primarys:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state for accessibility */
+.btn-primarys:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(149, 178, 38, 0.4);
+}
+.btn-3{
+    background-color: #95B226;
+} 
+
+.btn-4{
+    background-color: #5D58F0;
+} 
+
+.btn-5{
+    background-color: #95B226;
+} 
+
+.btn-6{
+    background-color: #95B226;
+}
+
 /* <!-- shared styles --> */
 body {
   font-family: "Quicksand", sans-serif;
@@ -141,9 +237,10 @@ body {
 /* main style */
     main{
         background-image: url(bg.png);
+        background-repeat: no-repeat;
     }
 
-    .cur-title{
+    .cur-title ,.stories-title{
     text-align: center;
     padding-top: 50px;
     font-size: 3rem;
@@ -197,9 +294,148 @@ color: #64C8FF;
 .bg2{
  background: linear-gradient(to bottom, #FFF4DC 0%, #FFF4DC , white 30%, white 100%);}
 .bg1{
-  background: linear-gradient(to bottom, #DEF5FF 0%, #DEF5FF , white 30%, white 100%);}
+  background: linear-gradient(to bottom, #DEF5FF 0%, #DEF5FF , white 30%, white 100%);
+}.stories{     
+    display: flex;     
+    top: 0;     
+    display: flex;     
+    justify-content: space-around;     
+    align-items: flex-start;     
+    padding: 0 20px;     
+    padding-top: 90px;     
+    max-width: 100%;     
+    width: 100%;     
+    background-image: url(bg.png);     
+    background-repeat: no-repeat;     
+    margin-top: 30px;     
+    
+    gap: 40px; /* Add gap between sections */
+}   
+
+.final{
+  background: linear-gradient(to top, #FFF4DC 0%, #FFF4DC , white 40%, white 100%);  
+}
+.stories{     
+    display: flex;     
+    top: 0;     
+    justify-content: center;     
+    align-items: flex-start;     
+    padding: 0 20px;     
+    padding-top: 90px;     
+    max-width: 100%;     
+    width: 100%;     
+    background-image: url(bg.png);     
+    background-repeat: no-repeat;     
+    margin-top: 30px;     
+    background: linear-gradient(to top, #FFF4DC 0%, #FFF4DC , white 30%, white 100%);
+    gap: 30px; /* Add gap between sections */
+}   
+
+.story-c{     
+    display: grid;     
+    grid-template-columns: repeat(2, 1fr);     
+    justify-content: space-evenly;     
+    background-color: transparent;     
+    width: 540px;     
+    height: auto;
+    gap: 20px; /* Add gap between grid items */
+} 
+
+.stor{   
+    display: flex;   
+    flex-direction: column;   
+    justify-content: flex-start;   
+    border-radius: 12px;   
+    background-color: #fff;   
+    width: 260px;   
+    height: auto;   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);   
+    overflow: hidden; 
+} 
+
+.story {   
+    display: flex;   
+    flex-direction: column;   
+    justify-content: flex-start;   
+    border-radius: 12px;   
+    background-color: #fff;   
+    width: 540px;   
+    height: auto;   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);   
+    overflow: hidden; 
+} 
+
+.story-img-container {
+  position: relative;
+  display: inline-block; /* or block depending on your layout */
+  width: 100%;
 }
 
+/* Your image style */
+.story-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+
+.story-img {   
+    width: 100%;   
+    height: auto;   
+    border-top-left-radius: 12px;   
+    border-top-right-radius: 12px;   
+    display: block; 
+    position: relative;
+    overflow: visible;
+
+} 
+.story-container , .story-container1, .story-container2 ,.story-container3  {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem; /* Space for the button */
+}
+
+/* Your image style */
+.story-imgs {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+
+.story-title {   
+    font-size: 1.6rem;   
+    font-weight: bold;   
+    margin: 0.5rem 1rem;   
+    color: #222; 
+} 
+
+.story-titles{ 
+    font-size: 1rem;   
+    font-weight: bold;   
+    margin: 0.5rem 1rem;   
+    color: #222; 
+} 
+
+.story-des {   
+    color: #666;   
+    font-weight: 400;   
+    font-size: 1rem;   
+    margin: 0 1rem 1.5rem 1rem;   
+    line-height: 1.6; 
+} 
+.lool {
+       
+      text-align: center;
+      margin-top: 100px;
+}
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -207,7 +443,7 @@ color: #64C8FF;
         border-bottom: 2px solid #000;
     }
 
-    .logo-name {
+    .logo-name , .btn-1{
         display: none;
     }
 
@@ -334,5 +570,12 @@ color: #64C8FF;
         max-width: 100%;
         max-width: 100%;
     }
-    
+    .cur-title{ 
+        font-size: 1.8rem;
+    }
+    .Curriculum{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
 }

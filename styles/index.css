@@ -22,7 +22,7 @@
 body {
   font-family: "Quicksand", sans-serif;
 }
-.navbar ,.nav-logo ,.nav-link,.btn{
+.navbar-logo ,.navbar-link,.btn{
     display: flex;
 }
 *{
@@ -32,3 +32,241 @@ body {
 }
 
 /* Navbar related style */
+.navbar{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+}
+.navbar-logo{
+    align-items: center;
+}
+.logo img{
+    height: 3rem;
+    width: 3rem;
+}
+.logo-name{
+    margin-left: 10px;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navbar-link{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+.navbar-link a{
+    display: block;
+    padding: 30px 16px;
+    color: #111;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+    font-weight: 600;
+}
+.nav-link1{
+    color:orange ;
+}
+.nav-link2{
+    color:skyblue ;
+}
+.nav-link3{
+    color:#05D4DF ;
+}
+.nav-link4{
+    color:#5D58EF ;
+}
+.navbar-link a:hover{
+    background-color: #323939;
+}
+.btn-1:hover{
+    background-color: orangered;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 34px;
+}
+.hamburger .bar{
+    width: 100%;
+    height: 4px;
+    background-color: #111;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+/* Banner style  */
+.banner{
+     position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    margin: 25px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #ff6b35;
+    display: block;
+}
+.main-text {
+    color: #333;
+    display: block;
+}
+.accent-text { 
+    color: #00b4d8;
+    display: inline; /* Keep inline so it stays with "age" */
+}
+.banner-des{
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid #000;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .navbar-link {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navbar-link.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .navbar-link a {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .navbar-link a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-width: 100%;
+    }
+    .item-1{
+        order: 2;
+    }
+    .item-2{
+        order: 1;
+    }
+    .banner-title{
+        width: 100%;
+        max-width: 100%;
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .highlight {
+        color: #ff6b35;
+        display: block;
+    }
+    .main-text {
+        color: #333;
+        display: block;
+    }
+    .accent-text { 
+        color: #00b4d8;
+        display: inline; /* Keep inline so it stays with "age" */
+    }
+    .banner-des{
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+
+    }
+    .banner-img{
+        max-width: 100%;
+        max-width: 100%;
+    }
+    
+}
